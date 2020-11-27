@@ -1,4 +1,6 @@
 import { InventoryItem } from './item';
+import { TraderLoyalty } from './trader';
+import { QuestStatus } from './quest';
 export interface Character {
     _id: string;
     aid: string;
@@ -8,6 +10,10 @@ export interface Character {
         [bodyPart: string]: string;
     };
     Inventory: CharacterInventory;
+    Quests: QuestStatus[];
+    TraderStandings: {
+        [traderId: string]: TraderLoyalty;
+    };
 }
 export interface CharacterInfo {
     Nickname: string;

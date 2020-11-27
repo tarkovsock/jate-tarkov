@@ -8,7 +8,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "makedoc": "typedoc --theme minimal --mode file --hideGenerator"
+    "makedoc": "typedoc --mode file --hideGenerator"
   },
   "devDependencies": {
     "typedoc": "^0.19.2",

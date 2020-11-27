@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ConfigRagfair | @jate/tarkov</title>
+	<title>Quest | @jate/tarkov</title>
 	<meta name="description" content="Documentation for @jate/tarkov">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,28 +56,21 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="configragfair.html">ConfigRagfair</a>
+					<a href="quest.html">Quest</a>
 				</li>
 			</ul>
-			<h1>Interface ConfigRagfair</h1>
+			<h1>Interface Quest</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Ragfair/Fleamarket Configuration</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ConfigRagfair</span>
+						<span class="target">Quest</span>
 					</li>
 				</ul>
 			</section>
@@ -88,11 +81,14 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="configragfair.html#communityitemtax" class="tsd-kind-icon">community<wbr>Item<wbr>Tax</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="configragfair.html#communityrequirementtax" class="tsd-kind-icon">community<wbr>Requirement<wbr>Tax</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="configragfair.html#communitytax" class="tsd-kind-icon">community<wbr>Tax</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="configragfair.html#enabled" class="tsd-kind-icon">enabled</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="configragfair.html#minuserlevel" class="tsd-kind-icon">min<wbr>User<wbr>Level</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="quest.html#_id" class="tsd-kind-icon">_id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="quest.html#conditions" class="tsd-kind-icon">conditions</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="quest.html#image" class="tsd-kind-icon">image</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="quest.html#location" class="tsd-kind-icon">location</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="quest.html#min_level" class="tsd-kind-icon">min_<wbr>level</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="quest.html#rewards" class="tsd-kind-icon">rewards</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="quest.html#traderid" class="tsd-kind-icon">trader<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="quest.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,64 +97,122 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="communityitemtax" class="tsd-anchor"></a>
-					<h3>community<wbr>Item<wbr>Tax</h3>
-					<div class="tsd-signature tsd-kind-icon">community<wbr>Item<wbr>Tax<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="_id" class="tsd-anchor"></a>
+					<h3>_id</h3>
+					<div class="tsd-signature tsd-kind-icon">_id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in database.ts:65</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="communityrequirementtax" class="tsd-anchor"></a>
-					<h3>community<wbr>Requirement<wbr>Tax</h3>
-					<div class="tsd-signature tsd-kind-icon">community<wbr>Requirement<wbr>Tax<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in database.ts:66</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="communitytax" class="tsd-anchor"></a>
-					<h3>community<wbr>Tax</h3>
-					<div class="tsd-signature tsd-kind-icon">community<wbr>Tax<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in database.ts:64</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="enabled" class="tsd-anchor"></a>
-					<h3>enabled</h3>
-					<div class="tsd-signature tsd-kind-icon">enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in database.ts:58</li>
+							<li>Defined in quest.ts:5</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Enable or disable Ragfair/Fleamarket</p>
+							<p>ID</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="minuserlevel" class="tsd-anchor"></a>
-					<h3>min<wbr>User<wbr>Level</h3>
-					<div class="tsd-signature tsd-kind-icon">min<wbr>User<wbr>Level<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="conditions" class="tsd-anchor"></a>
+					<h3>conditions</h3>
+					<div class="tsd-signature tsd-kind-icon">conditions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>AvailableForFinish<span class="tsd-signature-symbol">: </span><a href="questcondition.html" class="tsd-signature-type">QuestCondition</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>AvailableForStart<span class="tsd-signature-symbol">: </span><a href="questcondition.html" class="tsd-signature-type">QuestCondition</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>Fail<span class="tsd-signature-symbol">: </span><a href="questcondition.html" class="tsd-signature-type">QuestCondition</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in database.ts:63</li>
+							<li>Defined in quest.ts:26</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>Available<wbr>For<wbr>Finish<span class="tsd-signature-symbol">: </span><a href="questcondition.html" class="tsd-signature-type">QuestCondition</a><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>Available<wbr>For<wbr>Start<span class="tsd-signature-symbol">: </span><a href="questcondition.html" class="tsd-signature-type">QuestCondition</a><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>Fail<span class="tsd-signature-symbol">: </span><a href="questcondition.html" class="tsd-signature-type">QuestCondition</a><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="image" class="tsd-anchor"></a>
+					<h3>image</h3>
+					<div class="tsd-signature tsd-kind-icon">image<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in quest.ts:14</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="location" class="tsd-anchor"></a>
+					<h3>location</h3>
+					<div class="tsd-signature tsd-kind-icon">location<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in quest.ts:12</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="min_level" class="tsd-anchor"></a>
+					<h3>min_<wbr>level</h3>
+					<div class="tsd-signature tsd-kind-icon">min_<wbr>level<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in quest.ts:18</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="rewards" class="tsd-anchor"></a>
+					<h3>rewards</h3>
+					<div class="tsd-signature tsd-kind-icon">rewards<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>Fail<span class="tsd-signature-symbol">: </span><a href="questreward.html" class="tsd-signature-type">QuestReward</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>Started<span class="tsd-signature-symbol">: </span><a href="questreward.html" class="tsd-signature-type">QuestReward</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>Success<span class="tsd-signature-symbol">: </span><a href="questreward.html" class="tsd-signature-type">QuestReward</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in quest.ts:20</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>Fail<span class="tsd-signature-symbol">: </span><a href="questreward.html" class="tsd-signature-type">QuestReward</a><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>Started<span class="tsd-signature-symbol">: </span><a href="questreward.html" class="tsd-signature-type">QuestReward</a><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>Success<span class="tsd-signature-symbol">: </span><a href="questreward.html" class="tsd-signature-type">QuestReward</a><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="traderid" class="tsd-anchor"></a>
+					<h3>trader<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">trader<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in quest.ts:10</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Minimum player level required to access Ragfair</p>
+							<p>Trader who provides this quest</p>
 						</div>
 					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in quest.ts:16</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -202,30 +256,9 @@
 					<li class=" tsd-kind-interface">
 						<a href="config.html" class="tsd-kind-icon">Config</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface">
+					<li class=" tsd-kind-interface">
 						<a href="configragfair.html" class="tsd-kind-icon">Config<wbr>Ragfair</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="configragfair.html#communityitemtax" class="tsd-kind-icon">community<wbr>Item<wbr>Tax</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="configragfair.html#communityrequirementtax" class="tsd-kind-icon">community<wbr>Requirement<wbr>Tax</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="configragfair.html#communitytax" class="tsd-kind-icon">community<wbr>Tax</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="configragfair.html#enabled" class="tsd-kind-icon">enabled</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="configragfair.html#minuserlevel" class="tsd-kind-icon">min<wbr>User<wbr>Level</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="database.html" class="tsd-kind-icon">Database</a>
 					</li>
@@ -256,9 +289,39 @@
 					<li class=" tsd-kind-interface">
 						<a href="profileinfo.html" class="tsd-kind-icon">Profile<wbr>Info</a>
 					</li>
-					<li class=" tsd-kind-interface">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
 						<a href="quest.html" class="tsd-kind-icon">Quest</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="quest.html#_id" class="tsd-kind-icon">_id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="quest.html#conditions" class="tsd-kind-icon">conditions</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="quest.html#image" class="tsd-kind-icon">image</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="quest.html#location" class="tsd-kind-icon">location</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="quest.html#min_level" class="tsd-kind-icon">min_<wbr>level</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="quest.html#rewards" class="tsd-kind-icon">rewards</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="quest.html#traderid" class="tsd-kind-icon">trader<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="quest.html#type" class="tsd-kind-icon">type</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="questcondition.html" class="tsd-kind-icon">Quest<wbr>Condition</a>
 					</li>

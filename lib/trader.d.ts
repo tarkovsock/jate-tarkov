@@ -22,6 +22,9 @@ export interface Trader {
 }
 export interface TraderAssort {
 }
+/**
+ * Describes traders ability to repair items.
+ */
 export interface TraderRepair {
     availability: boolean;
     quality: string;
@@ -31,6 +34,9 @@ export interface TraderRepair {
     currency_coefficient: number;
     price_rate: number;
 }
+/**
+ * Describes traders ability to provide insurance.
+ */
 export interface TraderInsurance {
     availability: boolean;
     min_payment: number;
@@ -39,9 +45,34 @@ export interface TraderInsurance {
     max_storage_time: 24;
     excluded_category: string[];
 }
+/**
+ * Describes current loyalty status
+ */
 export interface TraderLoyalty {
     currentLevel: number;
     currentStanding: number;
     currentSalesSum: number;
+    loyaltyLevels?: {
+        [level: string]: TraderLoyaltyLevel;
+    };
     display: boolean;
+}
+/**
+ * Describes requirements for unlocking a trader loyalty level.
+ */
+export interface TraderLoyaltyLevel {
+    /**
+     * Minimum player level required
+     */
+    minLevel: number;
+    /**
+     * Minimum amount of currency transferred between trader (buy/sell)
+     *
+     * @todo Is this in roubles or the currency which the trader actually uses
+     */
+    minSalesSum: number;
+    /**
+     * Minimum standing/reputation with trader required
+     */
+    minStanding: number;
 }
