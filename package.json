@@ -7,9 +7,11 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "makedoc": "typedoc --theme minimal --mode file --hideGenerator"
   },
   "devDependencies": {
+    "typedoc": "^0.19.2",
     "typescript": "^4.1.2"
   }
 }
