@@ -1,5 +1,6 @@
 import { ItemTemplate } from './item';
 import { Locale } from './locale';
+import { Trader, TraderAssort } from './trader';
 
 export interface Database {
   globals: Globals
@@ -47,10 +48,27 @@ export interface Config {
   RagFair: ConfigRagfair
 }
 
+/**
+ * Ragfair/Fleamarket Configuration
+ */
 export interface ConfigRagfair {
+  /**
+   * Enable or disable Ragfair/Fleamarket
+   */
   enabled: boolean
+
+  /**
+   * Minimum player level required to access Ragfair
+   */
   minUserLevel: number
   communityTax: number
   communityItemTax: number
   communityRequirementTax: number
+}
+
+export interface TraderIndex {
+  [traderId: string]: {
+    assort: TraderAssort
+    base: Trader
+  }
 }
