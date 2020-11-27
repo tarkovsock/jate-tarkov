@@ -1,4 +1,4 @@
-import { ItemLocaleProps } from './locale';
+import { LocaleItemProps } from './locale';
 export interface ItemTemplate {
     _id: string;
     _parent: string;
@@ -6,7 +6,7 @@ export interface ItemTemplate {
     _type: string;
     _props: ItemProps;
 }
-export interface ItemProps extends ItemLocaleProps {
+export interface ItemProps extends LocaleItemProps {
     Weight: number;
     BackgroundColor: string;
     Width: number;

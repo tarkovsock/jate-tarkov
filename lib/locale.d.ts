@@ -28,13 +28,13 @@ export interface Locale {
         [id: string]: any;
     };
     templates: {
-        [id: string]: ItemLocaleProps;
+        [id: string]: LocaleItemProps;
     };
     trading: {
         [id: string]: any;
     };
 }
-export interface ItemLocaleProps {
+export interface LocaleItemProps {
     Name: string;
     ShortName: string;
     Description: string;
