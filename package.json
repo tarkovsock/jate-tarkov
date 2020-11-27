@@ -1,0 +1,15 @@
+{
+  "name": "@jate/tarkov",
+  "description": "A javascript library and typings for Tarkov related development",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Sock <tarkovsock@protonmail.com>",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.2"
+  }
+}
